@@ -175,8 +175,9 @@ select option {
     width: 275px;
   }
   .container {
-    width: 1420px;
+    width: 1410px;
     align-items: flex-start;
+    flex-direction: row;
   }
 }
 .main {
@@ -488,7 +489,6 @@ select option {
 }
 
 .main-info-pics-background {
-  position: relative;
   margin-top: 50px;
   width: 188px;
   height: 293px;
@@ -519,6 +519,7 @@ select option {
 
 .main-info-pics {
   height: 462px;
+  width: 100%;
 }
 
 .main-info-headline {
@@ -562,11 +563,16 @@ select option {
   padding-top: 60px;
   padding-left: 15px;
   text-align: center;
+}
+
+.main-info-cards a {
+  text-decoration: none;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
+  color: #212529;
 }
 
 .mission {
@@ -777,6 +783,10 @@ select option {
     background: url(images/serv-card-logo-desktop.svg) 76px 25.68px, url(images/serv-card-watering-desktop.svg) 130.5px 59.5px;
     background-repeat: no-repeat;
   }
+  .main-info-pics {
+    height: 903px;
+    width: 100%;
+  }
   .main-info-pics-background {
     width: 450px;
     height: 706px;
@@ -794,5 +804,62 @@ select option {
     top: -830px;
     border: 15px solid #ffffff;
     border-radius: 10px;
+  }
+  .col-6 {
+    display: flex;
+    flex: 0 0 50%;
+    max-width: 50%;
+    flex-direction: column;
+  }
+  .main-info-headline {
+    margin-top: 144.5px;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+    text-align: start;
+  }
+  .main-info-about {
+    font-size: 16px;
+    line-height: 28px;
+    padding-top: 30px;
+  }
+  .main-info-cards {
+    margin-top: 50px;
+    justify-content: flex-start;
+  }
+  .main-info-card {
+    width: 330px;
+    height: 97px;
+    box-shadow: none;
+    padding-left: 0px;
+    padding-top: 32px;
+  }
+  .main-info-cards a {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .mission {
+    background-size: 67px;
+    background-position: top 20px left 15px;
+  }
+  .vision {
+    background-size: 67px;
+    background-position: top 20px left 15px;
+  }
+  .support {
+    background-size: 67px;
+    background-position: top 20px left 15px;
+  }
+  .trust {
+    background-size: 67px;
+    background-position: top 20px left 15px;
+  }
+  .main-info-cards-button {
+    margin-top: 50px;
+    width: 190px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
