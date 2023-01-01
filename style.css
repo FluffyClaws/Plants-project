@@ -172,7 +172,7 @@ select option {
     width: 275px;
   }
   .container {
-    width: 1410px;
+    width: 1420px;
   }
 }
 .main {
@@ -362,6 +362,7 @@ select option {
 
 .services {
   display: flex;
+  justify-content: center;
 }
 
 .serv-headline {
@@ -568,5 +569,78 @@ select option {
     top: 190px;
     display: block;
     background: #c4c4c4;
+  }
+  .serv-headline {
+    padding-top: 80px;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+  }
+  .serv-info {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 30px;
+  }
+  .serv-card {
+    width: 330px;
+    height: 366px;
+    justify-content: center;
+  }
+  .planting {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px, url(images/serv-card-planting-desktop.svg) 130.5px 59.5px;
+    background-repeat: no-repeat;
+  }
+  .serv-card span:nth-child(1) {
+    padding-top: 179.5px;
+    padding-left: 0px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .serv-card span:nth-child(2) {
+    width: 246px;
+    height: 84px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 59.5px;
+    margin-top: 10px;
+  }
+  .serv-list {
+    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cutting {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px, url(images/serv-card-cuttin-desktop.svg) 130.5px 59.5px;
+    background-repeat: no-repeat;
+  }
+  .design {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px, url(images/serv-card-design-desktop.svg) 130.5px 59.5px;
+    background-repeat: no-repeat;
+  }
+  .growing {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px, url(images/serv-card-growing-desktop.svg) 130.5px 59.5px;
+    background-repeat: no-repeat;
+  }
+  .scaping {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px, url(images/serv-card-scaping-desktop.svg) 130.5px 59.5px;
+    background-repeat: no-repeat;
+  }
+  .branch {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px, url(images/serv-card-branch-desktop.svg) 130.5px 59.5px;
+    background-repeat: no-repeat;
+  }
+  .pests {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px, url(images/serv-card-pests-desktop.svg) 130.5px 59.5px;
+    background-repeat: no-repeat;
+  }
+  .watering {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px, url(images/serv-card-watering-desktop.svg) 130.5px 59.5px;
+    background-repeat: no-repeat;
   }
 }/*# sourceMappingURL=style.css.map */
