@@ -16,7 +16,8 @@
 
 .container {
   @include flex(center, center);
-  width: 100%;
+  width: 345px;
+  flex-direction: column;
 }
 
 .row {
@@ -39,7 +40,7 @@ select {
   border: none;
   outline: none;
   width: 72px;
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 select option {
@@ -186,5 +187,6 @@ select option {
 
   .container {
     width: 1420px;
+    align-items: flex-start;
   }
 }

@@ -15,7 +15,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 345px;
+  flex-direction: column;
 }
 
 .row {
@@ -43,6 +44,8 @@ select {
   outline: none;
   width: 72px;
   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 select option {
@@ -173,6 +176,7 @@ select option {
   }
   .container {
     width: 1420px;
+    align-items: flex-start;
   }
 }
 .main {
@@ -201,6 +205,9 @@ select option {
 }
 
 .top-info-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 479px;
   width: 100%;
   background-image: url(images/top-info-desc-plant.svg), linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
@@ -474,6 +481,133 @@ select option {
   color: #676767;
 }
 
+.main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-info-pics-background {
+  position: relative;
+  margin-top: 50px;
+  width: 188px;
+  height: 293px;
+  background: #00730c;
+}
+
+.main-info-pics-center {
+  position: relative;
+  top: -281px;
+  left: 12px;
+  width: 291px;
+  height: 358px;
+  background-color: #c4c4c4;
+  z-index: 1;
+}
+
+.main-info-pics-front {
+  width: 241px;
+  height: 182px;
+  background-color: #c4c4c4;
+  position: relative;
+  top: -386px;
+  left: 77px;
+  border: 9px solid white;
+  border-radius: 2pt;
+  z-index: 2;
+}
+
+.main-info-pics {
+  height: 462px;
+}
+
+.main-info-headline {
+  margin-top: 60px;
+  text-align: center;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.main-info-headline span {
+  color: #00730c;
+}
+
+.main-info-about {
+  padding-top: 15px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+}
+
+.main-info-cards {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-info-card {
+  width: 162px;
+  height: 94px;
+  background: #ffffff;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 5px;
+  padding-top: 60px;
+  padding-left: 15px;
+  text-align: center;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.mission {
+  background: url(images/main-info-mission-card.svg) 61px 15px;
+  background-repeat: no-repeat;
+}
+
+.vision {
+  background: url(images/main-info-vision-card.svg) 61px 15px;
+  background-repeat: no-repeat;
+}
+
+.support {
+  background: url(images/main-info-support-card.svg) 61px 15px;
+  background-repeat: no-repeat;
+}
+
+.trust {
+  background: url(images/main-info-trust-card.svg) 61px 15px;
+  background-repeat: no-repeat;
+}
+
+.main-info-cards-button {
+  margin-top: 30px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  width: 167px;
+  height: 40px;
+  background: #00730c;
+  border-radius: 5px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 @media (min-width: 481px) {
   .top-info-pic {
     display: none;
@@ -642,5 +776,23 @@ select option {
   .watering {
     background: url(images/serv-card-logo-desktop.svg) 76px 25.68px, url(images/serv-card-watering-desktop.svg) 130.5px 59.5px;
     background-repeat: no-repeat;
+  }
+  .main-info-pics-background {
+    width: 450px;
+    height: 706px;
+  }
+  .main-info-pics-center {
+    width: 601px;
+    height: 741px;
+    top: -670px;
+    left: 24px;
+  }
+  .main-info-pics-front {
+    width: 456px;
+    height: 306px;
+    left: 238px;
+    top: -830px;
+    border: 15px solid #ffffff;
+    border-radius: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
