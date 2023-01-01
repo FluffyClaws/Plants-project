@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.top-nav-bar {
+  width: 100%;
+  height: 55px;
+  background-color: #0c4b35;
+  @include flex(center, center);
+}
+
+.container {
+  @include flex(center, center);
+  width: 100%;
+}
+
+.row {
+  @include flex(space-between, center);
+  padding: 20px 20px 15px 20px;
+  width: 100%;
+}
+
+.wrapper {
+  @include flex(center, baseline);
+  gap: 20px;
+}
+
+select {
+  color: #ffffff;
+  background-color: transparent;
+  background-image: url(images/drop-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center right 5px;
+  border: none;
+  outline: none;
+  width: 72px;
+  -webkit-appearance: none;
+}
+
+select option {
+  background: #0c4b35;
+}
+
+.header {
+  width: 100%;
+  height: 125px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+
+  color: #ffffff;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+}
+
+.email {
+  height: 20px;
+  width: 20px;
+}
+
+.wrapper span {
+  display: none;
+}
+.top-nav {
+  height: 70px;
+  @include flex(center, center);
+}
+
+.top-nav span {
+  visibility: hidden;
+}
+
+.call {
+  height: 34px;
+  width: 40px;
+  background-image: url(images/call-btn.svg);
+  background-position: center;
+  border: none;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+.ham-menu {
+  width: 30px;
+  height: 30px;
+  background-image: url(images/ham-menu.svg);
+  background-position: center;
+  border: none;
+  background-color: #ffffff;
+}
+
+.menu {
+  display: none;
+}
+
+@media (min-width: 481px) {
+  .wrapper span {
+    // display: flex !important;
+    @include flex(center, center);
+  }
+
+  .menu {
+    display: flex;
+    gap: 44px;
+  }
+
+  .menu a {
+    height: 20px;
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #212529;
+  }
+
+  .menu a:hover {
+    color: #00730c;
+    text-decoration: underline;
+  }
+
+  .header {
+    height: 144px;
+  }
+
+  .ham-menu {
+    display: none !important;
+  }
+
+  .top-nav-bar {
+    height: 59px;
+  }
+
+  .top-nav {
+    height: 85px;
+  }
+
+  .top-nav span {
+    visibility: visible;
+  }
+
+  .wrapper div {
+    display: flex;
+    gap: 10px;
+  }
+
+  //   .mob {
+  //     display: none !important;
+  //   }
+
+  .call {
+    order: 2;
+    background-repeat: no-repeat;
+    background-position: 11.82px;
+    width: 170px;
+    height: 50px;
+    background-color: #00730c;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #ffffff;
+  }
+
+  .wrapper {
+    @include flex(center, center);
+  }
+
+  .email {
+    width: 275px;
+  }
+
+  .container {
+    width: 1410px;
+  }
+}
