@@ -18,6 +18,7 @@
   @include flex(center, center);
   width: 345px;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .row {

@@ -17,6 +17,7 @@
   align-items: center;
   width: 345px;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .row {
@@ -632,6 +633,7 @@ select option {
   margin-top: 40px;
   flex-wrap: wrap;
   gap: 20px 29px;
+  justify-content: center;
 }
 
 .pros-points span:nth-child(-n+4) {
@@ -659,6 +661,88 @@ select option {
   font-size: 28px;
   line-height: 38px;
   text-align: center;
+}
+
+.work-proc {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.work-proc-about {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #212529;
+  text-align: center;
+}
+
+.work-proc-about span:nth-child(1) {
+  color: #00730c;
+}
+
+.work-proc-about-info {
+  padding-top: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+}
+
+.work-proc-cards-wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work-consultation {
+  background: url(images/work-proc-card-bg.svg) 237.77px 47.97px, url(images/work-proc-consultation.svg) 20px 20px, #ffffff;
+  background-repeat: no-repeat;
+}
+
+.work-design {
+  background: url(images/work-proc-card-bg.svg) 237.77px 47.97px, url(images/work-proc-design.svg) 20px 20px, #ffffff;
+  background-repeat: no-repeat;
+}
+
+.work-maintenance {
+  background: url(images/work-proc-card-bg.svg) 237.77px 47.97px, url(images/work-proc-maintanance.svg) 20px 20px, #ffffff;
+  background-repeat: no-repeat;
+}
+
+.work-complete {
+  background: url(images/work-proc-card-bg.svg) 237.77px 47.97px, url(images/work-proc-complete.svg) 20px 20px, #ffffff;
+  background-repeat: no-repeat;
+}
+
+.work-proc-cards {
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+  padding-left: 20px;
+  width: 345px;
+  height: 208px;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 10px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+}
+
+.work-proc-cards span {
+  padding-top: 10px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
 }
 
 @media (min-width: 481px) {
@@ -954,5 +1038,56 @@ select option {
     background-position: -6px -2px;
     text-align: start;
     padding-left: 50px;
+  }
+  .work-proc-about {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+    width: 1136px;
+  }
+  .work-proc-about span:nth-child(1) {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+  }
+  .work-proc-about-info {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 20px;
+  }
+  .work-proc-cards-wrapper {
+    margin-top: 50px;
+    gap: 30px;
+    flex-direction: row;
+  }
+  .work-proc-cards {
+    width: 330px;
+    height: 408px;
+    padding-top: 165px;
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .work-proc-cards span {
+    padding-right: 30px;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .work-consultation {
+    background: url(images/work-proc-card-bg.svg) 180.85px 101.98px/127.8px, url(images/work-proc-consultation-dsktop.svg) 29px 55px/70px, url(images/work-proc-1-dsktop.svg) 252px 60px, #ffffff;
+    background-repeat: no-repeat;
+  }
+  .work-design {
+    background: url(images/work-proc-card-bg.svg) 180.85px 101.98px/127.8px, url(images/work-proc-design-dsktop.svg) 29px 50px, #ffffff;
+    background-repeat: no-repeat;
+  }
+  .work-maintenance {
+    background: url(images/work-proc-card-bg.svg) 180.85px 101.98px/127.8px, url(images/work-proc-maintenance-dsktop.svg) 29px 50px, #ffffff;
+    background-repeat: no-repeat;
+  }
+  .work-complete {
+    background: url(images/work-proc-card-bg.svg) 180.85px 101.98px/127.8px, url(images/work-proc-complete-dsktop.svg) 29px 50px, #ffffff;
+    background-repeat: no-repeat;
   }
 }/*# sourceMappingURL=style.css.map */
