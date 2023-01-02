@@ -596,6 +596,68 @@ select option {
   cursor: pointer;
 }
 
+.pros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 684px;
+  background: url(images/pros-bg-left.svg) 0px 80.84px, url(images/pros-bg-rigth.svg) 225.1px 0px, #0c4b35;
+  background-repeat: no-repeat;
+}
+
+.pros-image {
+  width: 345px;
+  height: 217px;
+  background-color: #676767;
+}
+
+.pros-info {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.pros-points {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 20px 29px;
+}
+
+.pros-points span:nth-child(-n+4) {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 158px;
+  height: 22px;
+  padding-left: 30px;
+  background-image: url(images/pros-tick.svg);
+  background-position: -7px -7px;
+  background-repeat: no-repeat;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.pros-info span {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+}
+
 @media (min-width: 481px) {
   .top-info-pic {
     display: none;
@@ -843,5 +905,51 @@ select option {
     height: 50px;
     font-size: 18px;
     line-height: 24px;
+  }
+  .pros {
+    margin-top: 100px;
+    height: 659px;
+  }
+  .col-12 {
+    display: flex;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .pros-image {
+    margin-top: 114.5px;
+    display: flex;
+    order: 2;
+    width: 672px;
+    height: 426px;
+    filter: drop-shadow(3px 10px 35px rgba(0, 0, 0, 0.25));
+  }
+  .pros-info {
+    width: 667px;
+    height: 311px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: start;
+  }
+  .pros-info span {
+    font-size: 45px;
+    line-height: 61px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+  .pros-points {
+    width: 667px;
+    order: 3;
+    justify-content: space-between;
+    gap: 20px 118px;
+  }
+  .pros-points span:nth-child(-n+4) {
+    font-size: 24px;
+    line-height: 33px;
+    width: 245px;
+    height: 33px;
+    background-position: -6px -2px;
+    text-align: start;
+    padding-left: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
