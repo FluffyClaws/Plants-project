@@ -615,6 +615,141 @@
   color: #676767;
 }
 
+// .staff-main {
+//   display: flex;
+//   justify-content: center;
+// }
+
+.staff-call {
+  margin-top: 55px;
+  width: 345px;
+  height: 224px;
+  background-color: #c4c4c4;
+  border-radius: 5px;
+
+  padding: 50px 32px 0px 41px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.call-big {
+  margin-top: 30px;
+  background: url(images/phone-green.svg) 30px 10px/20px no-repeat, #ffffff;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 5px;
+  border: none;
+  width: 137px;
+  height: 40px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #00730c;
+  padding-left: 30px;
+}
+
+.staff-about {
+  margin-top: 50px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.staff-about span {
+  color: #00730c;
+}
+
+.staff-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.staff-about-info {
+  padding-top: 15px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
+
+  text-align: center;
+
+  /* Typography / Paragraph Color */
+
+  color: #676767;
+}
+.expert {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 40px;
+  width: 345px;
+  height: 343px;
+  background-color: #c4c4c4;
+  border-radius: 5px;
+}
+
+.expert-info {
+  width: 345px;
+  height: 62px;
+  background: linear-gradient(
+    6.68deg,
+    #00730c 4.95%,
+    rgba(251, 246, 238, 0) 264.79%
+  );
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  /* Typography/Font White Color */
+
+  color: #ffffff;
+}
+
+.expert-info span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.expert-br-line {
+  margin-top: 30px;
+  width: 178px;
+  height: 8px;
+  background-image: url(images/exper-br-line.svg);
+  background-repeat: no-repeat;
+}
+
+.experts-xl-only {
+  display: none;
+}
+
+.experts-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (min-width: 481px) {
   .top-info-pic {
     display: none;
@@ -1038,5 +1173,89 @@
     background: url(images/work-proc-card-bg.svg) 180.85px 101.98px/127.8px,
       url(images/work-proc-complete-dsktop.svg) 29px 50px, #ffffff;
     background-repeat: no-repeat;
+  }
+
+  .staff-call {
+    width: 1410px;
+    height: 247px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 45px;
+    text-align: start;
+    padding: 60.5px 60px 78.5px 647px;
+  }
+
+  .call-big {
+    width: 170px;
+    height: 50px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.15);
+    font-size: 18px;
+    line-height: 24px;
+    background-size: 30px;
+    background-position: 15px 10px;
+    cursor: pointer;
+  }
+
+  .staff-about {
+    margin-top: 100px;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  br {
+    display: none;
+  }
+
+  .staff-about-info {
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: start;
+    width: 956px;
+    margin-right: 264px;
+  }
+  .staff-wrapper {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .expert-br-line {
+    display: none;
+  }
+
+  .experts-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .expert {
+    width: 330px;
+    height: 408px;
+    margin-top: 50px;
+  }
+
+  .expert-info {
+    width: 330px;
+    height: 90px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .expert-info span {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .experts-xl-only {
+    display: flex;
+    gap: 30px;
   }
 }
