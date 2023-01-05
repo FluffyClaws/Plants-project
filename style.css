@@ -867,6 +867,120 @@ select option {
   align-items: center;
 }
 
+.feedback-bg {
+  margin-top: 50px;
+  background: url(images/feedback-bg.svg);
+  width: 100%;
+  height: 585px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.feedback {
+  margin-top: 50px;
+  width: 345px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #000000;
+}
+
+.feedback span {
+  color: #00730c;
+}
+
+.feedback-info {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #676767;
+}
+
+.feedback-block {
+  margin-top: 40px;
+  width: 345px;
+  height: 413px;
+  background: #ffffff;
+  /* Normal Shadow */
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+}
+
+.feedback-user-pic {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 135px;
+  height: 183px;
+  background: #c4c4c4;
+}
+
+.feedback-data {
+  margin-top: 30px;
+  padding-top: 13.75px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+  background: url(images/quots.svg) no-repeat 20px 0px;
+}
+
+.feedback-username {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 15px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+}
+
+.feedback-username span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* Typography / Paragraph Color */
+  color: #676767;
+}
+
+.feedback-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.feedback-rating {
+  width: 124px;
+  height: 25px;
+  background: url(images/rating.svg) no-repeat;
+}
+
+.feedback-block-xl {
+  display: none;
+}
+
+.btn-wrapper {
+  display: none;
+}
+
 @media (min-width: 481px) {
   .top-info-pic {
     display: none;
@@ -1240,11 +1354,8 @@ select option {
     font-size: 45px;
     line-height: 61px;
     text-align: start;
-    display: flex;
+    display: inline;
     flex-direction: column;
-  }
-  br {
-    display: none;
   }
   .staff-about-info {
     padding-top: 30px;
@@ -1284,6 +1395,93 @@ select option {
     line-height: 30px;
   }
   .experts-xl-only {
+    display: flex;
+    gap: 30px;
+  }
+  .feedback {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    width: 1410px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .feedback-head {
+    width: 956px;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+  }
+  .feedback-info {
+    text-align: start;
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    width: 956px;
+  }
+  .feedback-block {
+    width: 690px;
+    height: 341px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .feedback-wrapper {
+    width: 415px;
+    margin-left: 31px;
+    margin-top: 27px;
+  }
+  .arrows-btn-back {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #00730c;
+    border-radius: 5px;
+    background: url(images/arrows.svg) no-repeat center;
+    cursor: pointer;
+  }
+  .arrows-btn-back:hover {
+    background: url(images/arrows-hover.svg);
+    transform: rotate(180deg);
+  }
+  .forward {
+    transform: rotate(180deg);
+  }
+  .forward:hover {
+    background: url(images/arrows-hover.svg);
+    transform: none;
+  }
+  .btn-wrapper {
+    display: flex;
+    gap: 30px;
+  }
+  .feedback-user-pic {
+    width: 193px;
+    height: 276px;
+    margin-top: 32px;
+    margin-left: 25px;
+  }
+  .feedback-data {
+    font-size: 18px;
+    line-height: 30px;
+    width: 415px;
+    height: 174px;
+    margin-left: 31px;
+    margin-top: 38px;
+    padding-right: 0px;
+    padding-left: 12px;
+    padding-top: 24px;
+    background-size: 70px;
+    background-position: 8px 0px;
+  }
+  .feedback-username {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .feedback-username span {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .feedback-block-xl {
     display: flex;
     gap: 30px;
   }
