@@ -869,6 +869,88 @@
   display: none;
 }
 
+.faq-wrapper {
+  margin-top: 152px;
+  display: flex;
+  justify-content: center;
+}
+
+.faq {
+  display: flex;
+}
+
+.faq-head {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  color: #212529;
+}
+
+.faq-head span {
+  color: #00730c;
+}
+
+.faq-info {
+  padding-top: 15px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #676767;
+}
+
+.dropbtn {
+  width: 345px;
+  height: 44px;
+  border-radius: 3px;
+  border: none;
+  padding-left: 20px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: start;
+  color: #212529;
+  background: url(images/plus.svg) 307px 12.5px no-repeat, #fff8f1;
+}
+
+.dropbtn:focus {
+  color: #ffffff;
+  background: url(images/minus.svg) 307px 12.5px no-repeat, #00730c;
+}
+
+.faq-dropdwn {
+  margin-top: 20px;
+  width: 345px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.faq-dropdwn-content {
+  display: none;
+  max-width: 345px;
+  padding-left: 16px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+}
+
+.show {
+  display: block;
+}
+
 @media (min-width: 481px) {
   .top-info-pic {
     display: none;
@@ -1476,5 +1558,69 @@
   .feedback-block-xl {
     display: flex;
     gap: 30px;
+  }
+
+  .faq-wrapper {
+    margin-top: 157px;
+    // justify-content: flex-start;
+  }
+
+  .faq {
+    width: 828px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .faq-head {
+    width: 828px;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+  }
+
+  .faq-info {
+    width: 828px;
+    text-align: start;
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .faq-dropdwn {
+    gap: 30px;
+    width: 810px;
+    margin-top: 42px;
+  }
+
+  .dropbtn {
+    width: 810px;
+    height: 59px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    background-position: 756.5px 15.5px;
+    background-size: 28px;
+  }
+
+  .dropbtn:focus {
+    background-position: 752.5px 15.5px;
+    background-size: 28px;
+  }
+
+  .faq-dropdwn-content {
+    font-size: 16px;
+    line-height: 28px;
+    width: 810px;
+    max-width: 810px;
+    padding-left: 30px;
+    padding-right: 28px;
+    height: 168px;
+  }
+  .faq-pic {
+    margin-left: 65px;
+    width: 509px;
+    height: 679px;
+    background-color: #c4c4c4;
   }
 }
