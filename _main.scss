@@ -72,9 +72,9 @@
   width: 303px;
   height: 44px;
 
-  background: #00730c;
+  background: transparent;
   border-radius: 5px;
-  border: none;
+  border: 1px solid #00730c;
 
   font-family: "Nunito";
   font-style: normal;
@@ -84,6 +84,11 @@
 
   text-transform: capitalize;
 
+  color: #00730c;
+}
+
+.quate-btn:active {
+  background: #00730c;
   color: #ffffff;
 }
 
@@ -438,10 +443,10 @@
 .main-info-cards-button {
   margin-top: 30px;
   appearance: none;
-  border: none;
+  border: 1px solid #00730c;
   width: 167px;
   height: 40px;
-  background: #00730c;
+  background: #ffffff;
   border-radius: 5px;
 
   font-family: "Nunito";
@@ -449,8 +454,13 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: #00730c;
   cursor: pointer;
+}
+
+.main-info-cards-button:active {
+  color: #ffffff;
+  background-color: #00730c;
 }
 
 .pros {
@@ -630,7 +640,7 @@
 
 .call-big {
   margin-top: 30px;
-  background: url(images/phone-green.svg) 30px 10px/20px no-repeat, #ffffff;
+  background: url(images/call-btn-default.svg) 30px 10px/20px no-repeat, #ffffff;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   border-radius: 5px;
   border: none;
@@ -643,6 +653,11 @@
   line-height: 19px;
   color: #00730c;
   padding-left: 30px;
+}
+
+.call-big:active {
+  color: #ffffff;
+  background: url(images/call-btn-active.svg) 30px 10px/20px no-repeat, #00730c;
 }
 
 .staff-about {
@@ -1100,13 +1115,7 @@
 
 .logos-main-bottom {
   margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  gap: 62px;
   mix-blend-mode: luminosity;
-}
-
-.logos-main-bottom a {
   width: 150px;
   height: 70px;
 }
@@ -1123,7 +1132,18 @@
 }
 
 .logos-main-bottom-wrapper {
+  display: flex;
+  justify-content: center;
   margin-left: 30px;
+  gap: 62px;
+}
+
+.logo-a {
+  background: url(images/logo-main-bottom1.svg) no-repeat center;
+}
+
+.logo-b {
+  background: url(images/logo-main-bottom2.svg) no-repeat center;
 }
 
 @media (min-width: 481px) {
@@ -1189,6 +1209,10 @@
     font-size: 18px;
     color: #676767;
     background-image: url(images/right-arrow-grey.svg);
+  }
+
+  .top-info-wrapper a:hover {
+    color: #00730c;
   }
 
   .top-info-tags-wrapper {
@@ -1265,9 +1289,23 @@
     justify-content: center;
   }
 
+  .serv-card:hover {
+    background-color: #00730c;
+  }
+
+  .serv-card:hover span {
+    color: #ffffff;
+  }
+
   .planting {
     background: url(images/serv-card-logo-desktop.svg) 76px 25.68px,
       url(images/serv-card-planting-desktop.svg) 130.5px 59.5px;
+    background-repeat: no-repeat;
+  }
+
+  .planting:hover {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px,
+      url(images/serv-card-planting-active.svg) 130.5px 59.5px, #00730c;
     background-repeat: no-repeat;
   }
 
@@ -1303,9 +1341,21 @@
     background-repeat: no-repeat;
   }
 
+  .cutting:hover {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px,
+      url(images/serv-card-cuttin-active.svg) 130.5px 59.5px, #00730c;
+    background-repeat: no-repeat;
+  }
+
   .design {
     background: url(images/serv-card-logo-desktop.svg) 76px 25.68px,
       url(images/serv-card-design-desktop.svg) 130.5px 59.5px;
+    background-repeat: no-repeat;
+  }
+
+  .design:hover {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px,
+      url(images/serv-card-design-active.svg) 130.5px 59.5px, #00730c;
     background-repeat: no-repeat;
   }
 
@@ -1315,9 +1365,21 @@
     background-repeat: no-repeat;
   }
 
+  .growing:hover {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px,
+      url(images/serv-card-growing-active.svg) 130.5px 59.5px, #00730c;
+    background-repeat: no-repeat;
+  }
+
   .scaping {
     background: url(images/serv-card-logo-desktop.svg) 76px 25.68px,
       url(images/serv-card-scaping-desktop.svg) 130.5px 59.5px;
+    background-repeat: no-repeat;
+  }
+
+  .scaping:hover {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px,
+      url(images/serv-card-scapping-active.svg) 130.5px 59.5px, #00730c;
     background-repeat: no-repeat;
   }
 
@@ -1327,15 +1389,33 @@
     background-repeat: no-repeat;
   }
 
+  .branch:hover {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px,
+      url(images/serv-card-branch-active.svg) 130.5px 59.5px, #00730c;
+    background-repeat: no-repeat;
+  }
+
   .pests {
     background: url(images/serv-card-logo-desktop.svg) 76px 25.68px,
       url(images/serv-card-pests-desktop.svg) 130.5px 59.5px;
     background-repeat: no-repeat;
   }
 
+  .pests:hover {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px,
+      url(images/serv-card-pests-active.svg) 130.5px 59.5px, #00730c;
+    background-repeat: no-repeat;
+  }
+
   .watering {
     background: url(images/serv-card-logo-desktop.svg) 76px 25.68px,
       url(images/serv-card-watering-desktop.svg) 130.5px 59.5px;
+    background-repeat: no-repeat;
+  }
+
+  .watering:hover {
+    background: url(images/serv-card-logo-desktop.svg) 76px 25.68px,
+      url(images/serv-card-watering-active.svg) 130.5px 59.5px, #00730c;
     background-repeat: no-repeat;
   }
 
@@ -1518,6 +1598,14 @@
     line-height: 33px;
   }
 
+  .work-proc-cards:hover {
+    color: #ffffff;
+  }
+
+  .work-proc-cards:hover span {
+    color: #ffffff;
+  }
+
   .work-proc-cards span {
     padding-right: 30px;
     padding-top: 20px;
@@ -1528,25 +1616,57 @@
   .work-consultation {
     background: url(images/work-proc-card-bg.svg) 180.85px 101.98px/127.8px,
       url(images/work-proc-consultation-dsktop.svg) 29px 55px/70px,
-      url(images/work-proc-1-dsktop.svg) 252px 60px, #ffffff;
+      url(images/1.svg) 252px 60px, #ffffff;
+    background-repeat: no-repeat;
+  }
+
+  .work-consultation:hover {
+    background: url(images/work-proc-card-bg.svg) 180.85px 101.98px/127.8px,
+      url(images/work-proc-consultation-active.svg) 29px 55px/70px,
+      url(images/1-active.svg) 252px 60px, #00730c;
     background-repeat: no-repeat;
   }
 
   .work-design {
     background: url(images/work-proc-card-bg.svg) 180.85px 101.98px/127.8px,
-      url(images/work-proc-design-dsktop.svg) 29px 50px, #ffffff;
+      url(images/work-proc-design-dsktop.svg) 29px 50px,
+      url(images/2.svg) 252px 47px/65px border-box, #ffffff;
+    background-repeat: no-repeat;
+  }
+
+  .work-design:hover {
+    background: url(images/work-proc-card-bg.svg) 180.85px 101.98px/127.8px,
+      url(images/work-proc-design-active.svg) 29px 50px,
+      url(images/2-active.svg) 252px 47px/65px, #00730c;
     background-repeat: no-repeat;
   }
 
   .work-maintenance {
     background: url(images/work-proc-card-bg.svg) 180.85px 101.98px/127.8px,
-      url(images/work-proc-maintenance-dsktop.svg) 29px 50px, #ffffff;
+      url(images/work-proc-maintenance-dsktop.svg) 29px 50px,
+      url(images/3.svg) 252px 47px/65px, #ffffff;
+    background-repeat: no-repeat;
+  }
+
+  .work-maintenance:hover {
+    background: url(images/work-proc-card-bg.svg) 180.85px 101.98px/127.8px,
+      url(images/work-proc-maintenance-active.svg) 29px 50px,
+      url(images/3-active.svg) 252px 47px/65px, #00730c;
+
     background-repeat: no-repeat;
   }
 
   .work-complete {
     background: url(images/work-proc-card-bg.svg) 180.85px 101.98px/127.8px,
-      url(images/work-proc-complete-dsktop.svg) 29px 50px, #ffffff;
+      url(images/work-proc-complete-dsktop.svg) 29px 50px,
+      url(images/4.svg) 252px 47px/65px, #ffffff;
+    background-repeat: no-repeat;
+  }
+
+  .work-complete:hover {
+    background: url(images/work-proc-card-bg.svg) 180.85px 101.98px/127.8px,
+      url(images/work-proc-complete-active.svg) 29px 50px,
+      url(images/4-active.svg) 252px 47px/65px #00730c;
     background-repeat: no-repeat;
   }
 
@@ -1573,6 +1693,11 @@
     background-size: 30px;
     background-position: 15px 10px;
     cursor: pointer;
+  }
+
+  .call-big:active {
+    background-size: 30px;
+    background-position: 15px 10px;
   }
 
   .staff-about {
@@ -1621,6 +1746,52 @@
     font-size: 24px;
     line-height: 33px;
   }
+
+  .expert:hover > .expert-info {
+    height: 408px;
+    background: linear-gradient(
+      6.68deg,
+      #00730c 4.95%,
+      rgba(251, 246, 238, 0) 264.79%
+    );
+  }
+
+  .expert-socials-wrapper {
+    display: none;
+  }
+
+  .expert:hover .expert-socials-wrapper {
+    display: block;
+  }
+
+  .expert-socials {
+    margin-top: 21.2px;
+    display: flex;
+    flex-direction: row;
+    gap: 24.8px;
+  }
+
+  .expert-socials > a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .g-expert {
+    background: url(images/goggle-expert.svg) center no-repeat;
+  }
+  .fb-expert {
+    background: url(images/facebook-expert.svg) center no-repeat;
+  }
+  .tw-expert {
+    background: url(images/twitter-expert.svg) center no-repeat;
+  }
+  .pin-expert {
+    background: url(images/pinterest-expert.svg) center no-repeat;
+  }
+  .in-expert {
+    background: url(images/linkedin-expert.svg) center no-repeat;
+  }
+
   .expert-info span {
     font-size: 18px;
     line-height: 30px;
@@ -1909,17 +2080,23 @@
   }
 
   .logos-main-bottom {
+    width: 202px;
+    height: 100px;
     gap: 100px;
   }
 
-  .logos-main-bottom a {
-    width: 202px;
-    height: 100px;
+  .logo-a {
+    background: url(images/logo-main-bottom1.svg) no-repeat center;
+  }
+
+  .logo-b {
+    background: url(images/logo-main-bottom2.svg) no-repeat center;
   }
 
   .logos-main-bottom-wrapper {
     display: flex;
     width: 1712px;
     margin-left: 104px;
+    gap: 100px;
   }
 }

@@ -79,14 +79,24 @@ select option {
   visibility: hidden;
 }
 
+.logo {
+  height: 40px;
+}
+
 .call {
   height: 34px;
   width: 40px;
-  background-image: url(images/call-btn.svg);
+  background: url(images/call-btn-default.svg) no-repeat center;
   background-position: center;
   border: none;
   border-radius: 10px;
   margin-right: 40px;
+}
+
+.wrapper-top-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
 }
 
 .ham-menu {
@@ -96,6 +106,43 @@ select option {
   background-position: center;
   border: none;
   background-color: #ffffff;
+}
+
+.ham-dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.ham-dropdown-content {
+  display: none;
+  width: 100%;
+  height: 200px;
+}
+.ham-dropdown-content a {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #212529;
+}
+
+.ham-dropdown-content a:hover {
+  color: #00730c;
+  text-decoration: underline;
+}
+.ham-dropdown-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 345px;
+  height: 200px;
+  gap: 5px;
+  margin-top: 20px;
+  align-items: flex-end;
 }
 
 .menu {
@@ -155,18 +202,17 @@ select option {
     gap: 10px;
   }
 
-  //   .mob {
-  //     display: none !important;
-  //   }
-
   .call {
     order: 2;
     background-repeat: no-repeat;
     background-position: 11.82px;
     width: 170px;
     height: 50px;
-    background-color: #00730c;
+    background: url(images/call-btn-default.svg) 35px no-repeat, #ffffff;
+    border: 1px solid #00730c;
     border-radius: 5px;
+    padding-left: 50px;
+
     cursor: pointer;
 
     font-family: "Nunito";
@@ -175,6 +221,11 @@ select option {
     font-size: 18px;
     line-height: 24px;
 
+    color: #00730c;
+  }
+
+  .call:active {
+    background: url(images/call-btn-active.svg) 35px no-repeat, #00730c;
     color: #ffffff;
   }
 

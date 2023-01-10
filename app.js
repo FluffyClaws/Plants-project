@@ -1,5 +1,8 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
+function hamDropdown() {
+  document.getElementById("hamDropdown").classList.toggle("show");
+}
 function faqDropdwn1() {
   document.getElementById("faqDropdwn1").classList.toggle("show");
 }
