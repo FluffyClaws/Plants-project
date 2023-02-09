@@ -2083,4 +2083,508 @@ select option {
     margin-left: 104px;
     gap: 100px;
   }
+}
+.footer {
+  width: 100%;
+  height: 1081px;
+  background-color: #0c4b35;
+  margin-top: 140px;
+}
+
+.solutions-footer {
+  position: relative;
+  top: -90px;
+  width: 320px;
+  height: 179px;
+  background-color: #d9f1e0;
+  border-radius: 5px;
+  margin-left: 27.5px;
+}
+
+.solutions-head span {
+  color: #00730c;
+}
+
+.solutions-head {
+  padding: 30px 30px 0px 50px;
+  text-align: center;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #212529;
+}
+
+.solutions-quate-btn {
+  margin-top: 25px;
+  margin-left: 83.5px;
+  margin-bottom: 30px;
+  width: 153px;
+  height: 40px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #00730c;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #00730c;
+}
+
+.solutions-quate-btn:active {
+  color: #ffffff;
+  background-color: #00730c;
+}
+
+.subscription {
+  padding-right: 14.5px;
+  padding-left: 15.5px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.sub-info {
+  padding-top: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.sub-email {
+  margin-top: 31.5px;
+  width: 199px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+input::-moz-placeholder {
+  color: #ffffff;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+.sub-email:active {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+}
+
+.sub-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.sub-btn {
+  cursor: pointer;
+  width: 101px;
+  height: 30px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+
+.sub-br-line {
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.footer-social {
+  margin-top: 14.5px;
+  margin-left: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-circle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.fb {
+  background: url(images/facebook-expert.svg) no-repeat center/20px;
+}
+
+.fb:hover {
+  background: url(images/facebook-expert-hover.svg), #ffffff;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.twitter {
+  background: url(images/twitter-expert.svg) no-repeat center/20px;
+}
+
+.twitter:hover {
+  background: url(images/twitter-expert-hover.svg), #ffffff;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.google {
+  background: url(images/goggle-expert.svg) no-repeat center/20px;
+}
+
+.google:hover {
+  background: url(images/google-expert-hover.svg), #ffffff;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.linkdin {
+  background: url(images/linkedin-expert.svg) no-repeat center/20px;
+}
+
+.linkdin:hover {
+  background: url(images/linkedin-expert-hover.svg), #ffffff;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-contacts {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-left: 15.5px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-contacts div {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer-contacts div:nth-child(1) {
+  margin-top: 5px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 15.5px;
+  margin-top: 40px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.footer-nav a {
+  padding-left: 20px;
+  text-decoration: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  width: 90px;
+  background: url(images/links-arrow.svg) no-repeat left;
+}
+
+.footer-nav-wrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 259.91px;
+}
+
+.left-nav {
+  display: flex;
+  width: 75.45px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right-nav {
+  display: flex;
+  width: 75.45px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-serv {
+  margin-top: 40px;
+  margin-left: 15.5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.footer-serv a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer-serv :nth-child(1) {
+  margin-top: 5px;
+}
+
+.footer-br {
+  margin-left: 15px;
+  margin-top: 41px;
+  width: 345px;
+  height: 1px;
+  background: #ffffff;
+}
+
+.copyright {
+  margin-top: 15px;
+  margin-left: 44.5px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  width: 286px;
+  height: 32px;
+}
+
+.footer-map {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-left: 45px;
+  margin-top: 20px;
+}
+
+.footer-map a {
+  text-decoration: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+@media (min-width: 481px) {
+  .solutions-footer {
+    width: 1410px;
+    height: 125px;
+    top: -70px;
+    margin-left: 255px;
+    display: flex;
+  }
+  .solutions-head {
+    font-size: 45px;
+    line-height: 61px;
+    padding: 32px 0px 32px 100px;
+    height: 61px;
+    margin-right: 271px;
+  }
+  .solutions-quate-btn {
+    width: 175px;
+    height: 50px;
+    margin: 33.5px 100px 41.5px 0px;
+  }
+  .subscription {
+    margin-left: 254.66px;
+    font-size: 24px;
+    line-height: 33px;
+    width: 498px;
+    height: 283px;
+    padding-left: 0px;
+  }
+  .sub-info {
+    padding-top: 80px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .sub-email {
+    margin-top: 44px;
+    line-height: 25px;
+  }
+  .sub-btn {
+    font-size: 24px;
+    line-height: 33px;
+    height: 33px;
+    margin-right: 15px;
+  }
+  .sub-br-line {
+    width: 498px;
+  }
+  .sub-wrapper {
+    justify-content: space-between;
+  }
+  .footer-social {
+    margin-left: 254.66px;
+    margin-top: 30px;
+    gap: 30px;
+    order: 2;
+  }
+  .social-circle {
+    width: 40px;
+    height: 40px;
+  }
+  .fb,
+  .fb:hover {
+    background-size: 30px;
+  }
+  .twitter,
+  .twitter:hover {
+    background-size: 30px;
+  }
+  .google,
+  .google:hover {
+    background-size: 30px;
+  }
+  .linkdin,
+  .linkdin:hover {
+    background-size: 30px;
+  }
+  .footer-xl-wrapper {
+    height: 354px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 96px;
+    margin-top: 115px;
+  }
+  .footer-contacts {
+    width: 208px;
+    height: 187px;
+    margin: 0px;
+    font-size: 24px;
+    line-height: 33px;
+    gap: 20px;
+  }
+  .footer-contacts div {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .footer-contacts div:nth-child(1) {
+    margin-top: 60px;
+  }
+  .footer-contacts div:nth-child(2) {
+    width: 150px;
+  }
+  .footer-contacts div:nth-child(2) span {
+    display: none;
+  }
+  .footer-nav {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .footer-nav-wrapper {
+    margin-top: 80px;
+    width: 239.68px;
+  }
+  .footer-nav a {
+    font-size: 18px;
+    line-height: 30px;
+    width: 109px;
+  }
+  .left-nav {
+    gap: 20px;
+  }
+  .right-nav {
+    gap: 20px;
+  }
+  .footer-serv {
+    margin: 0px;
+    font-size: 24px;
+    line-height: 33px;
+    gap: 20px;
+  }
+  .footer-serv a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .footer-serv :nth-child(1) {
+    margin-top: 60px;
+  }
+  .footer-br {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 41px;
+  }
+  .footer {
+    height: 736px;
+  }
+  .copyright {
+    margin-top: 30px;
+    margin-left: 358px;
+    font-size: 18px;
+    line-height: 30px;
+    height: 30px;
+    width: 631px;
+    text-align: start;
+    display: inline;
+  }
+  .footer-map {
+    width: 337px;
+    margin-top: 31px;
+    margin-left: 462px;
+    justify-content: flex-end;
+  }
+  .footer-map a {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .footer-bottom-wrapper {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */
